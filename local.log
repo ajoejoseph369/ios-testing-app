@@ -1,0 +1,57 @@
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:08:47:789 GMT+0530 (IST) -- Starting configuration console on http://localhost:45454
+Thu Jul 18 2024 18:08:48:734 GMT+0530 (IST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 36989
+Thu Jul 18 2024 18:08:48:935 GMT+0530 (IST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Thu Jul 18 2024 18:08:49:233 GMT+0530 (IST) -- Press Ctrl-C to exit
+
+
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:14:06:803 GMT+0530 (IST) -- [ERROR] Another instance of BrowserStack Binary is running with on your system with PID: 36989
+Thu Jul 18 2024 18:14:06:803 GMT+0530 (IST) -- [ERROR] Please close it and try again
+Thu Jul 18 2024 18:14:06:803 GMT+0530 (IST) -- [ERROR] SYS_CONFLICT:1001 https://browserstack.com/docs/local-testing/binary/errors/1001
+Thu Jul 18 2024 18:14:06:804 GMT+0530 (IST) -- You can learn more about BrowserStack Binary flags by running ./BrowserStackLocal --help
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:16:56:394 GMT+0530 (IST) -- [ERROR] Another instance of BrowserStack Binary is running with on your system with PID: 36989
+Thu Jul 18 2024 18:16:56:394 GMT+0530 (IST) -- [ERROR] Please close it and try again
+Thu Jul 18 2024 18:16:56:394 GMT+0530 (IST) -- [ERROR] SYS_CONFLICT:1001 https://browserstack.com/docs/local-testing/binary/errors/1001
+Thu Jul 18 2024 18:16:56:395 GMT+0530 (IST) -- You can learn more about BrowserStack Binary flags by running ./BrowserStackLocal --help
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:19:16:485 GMT+0530 (IST) -- [ERROR] Another instance of BrowserStack Binary is running with on your system with PID: 36989
+Thu Jul 18 2024 18:19:16:485 GMT+0530 (IST) -- [ERROR] Please close it and try again
+Thu Jul 18 2024 18:19:16:485 GMT+0530 (IST) -- [ERROR] SYS_CONFLICT:1001 https://browserstack.com/docs/local-testing/binary/errors/1001
+Thu Jul 18 2024 18:19:16:486 GMT+0530 (IST) -- You can learn more about BrowserStack Binary flags by running ./BrowserStackLocal --help
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:23:37:867 GMT+0530 (IST) -- Starting configuration console on http://localhost:45454
+Thu Jul 18 2024 18:23:39:802 GMT+0530 (IST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 40417
+Thu Jul 18 2024 18:23:40:205 GMT+0530 (IST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Thu Jul 18 2024 18:23:40:935 GMT+0530 (IST) -- Press Ctrl-C to exit
+
+
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Thu Jul 18 2024 18:34:59:282 GMT+0530 (IST) -- Starting configuration console on http://localhost:45454
+Thu Jul 18 2024 18:35:00:565 GMT+0530 (IST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 41390
+Thu Jul 18 2024 18:35:00:965 GMT+0530 (IST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Thu Jul 18 2024 18:35:01:655 GMT+0530 (IST) -- Press Ctrl-C to exit
+
+
