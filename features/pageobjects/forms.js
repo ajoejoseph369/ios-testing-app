@@ -1,13 +1,17 @@
 const {$} = require('@wdio/globals');
 const { ok } = require('appium-doctor/build/lib/utils');
+const page = require('./page');
 
 const formsBtn = '//XCUIElementTypeOther[@name="Forms"]';
 const formsView = '//XCUIElementTypeOther[@name="Forms-screen"]';
+const pageHeader = '//XCUIElementTypeStaticText[@name="Form components"]';
 const textInput = '//XCUIElementTypeTextField[@name="text-input"]';
 const enteredText = '//XCUIElementTypeStaticText[@name="input-text-result"]';
 const toggleBtn = '//XCUIElementTypeSwitch[@name="switch"]';
 const switchText = '//XCUIElementTypeStaticText[@name="switch-text"]';
 const dropdown = '//XCUIElementTypeOther[@name="select-Dropdown"]';
+const pickerWheel = '//XCUIElementTypePickerWheel';
+const firstOption = '//XCUIElementTypePickerWheel[@value="webdriver.io is awesome"]'
 const secondOption = '//XCUIElementTypePickerWheel[@value="Appium is awesome"]';
 const done = '//XCUIElementTypeOther[@name="header-Dropdown"]';
 const activeBtn = '//XCUIElementTypeOther[@name="Active"]';
@@ -17,11 +21,19 @@ const okBtn = '//XCUIElementTypeButton[@name="OK"]';
 class Forms{
 
     async redirectToFormsPage(){
+        // while(!(await $(pageHeader).isDisplayed())){
         await $(formsBtn).click();
+        await $(pageHeader).waitForDisplayed({timeout:6000});
+        // }
     }
 
     async checkRedirectionToFormsPage(){
-        return (await $(formsView).isDisplayed());
+        // await $(formsView).waitForExist({timeout:6000});
+        if(await $(pageHeader).isDisplayed())
+            console.log("On Forms Page");
+        else
+            console.log("not on forms page yet");
+        return (await $(pageHeader).isDisplayed());
     }
 
     async enterText(text){
@@ -42,7 +54,10 @@ class Forms{
 
     async selectDropDown(){
         await $(dropdown).click();
-        await $(secondOption).waitForDisplayed({ timeout: 5000 });
+        // await $(pickerWheel).waitForDisplayed({timeout:8000});
+        await $(pickerWheel).setValue('Appium is awesome');
+        // await $(firstOption).waitForDisplayed({ timeout: 5000 });
+        // await $(secondOption).waitForDisplayed({ timeout: 5000 });
         await $(done).click();
     }
 
@@ -55,7 +70,7 @@ class Forms{
             await $(okBtn).click();
             return true;
         }
-        await new Promise(resolve => setTimeout(resolve, 2000)); // Pause for 5 seconds
+        await browser.pause(2000);
     }
 
 }

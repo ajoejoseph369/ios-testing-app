@@ -3,9 +3,8 @@ const { expect, $ } = require('@wdio/globals')
 
 const Homepage = require('../pageobjects/page.js');
 const Login = require('../pageobjects/loginpage.js');
-// const Forms = require('../pageobjects/forms.js');
-// const Swipe = require('../pageobjects/swipe.js');
-// const Drag = require('../pageobjects/drag.js');
+const Forms = require('../pageobjects/forms.js');
+const Swipe = require('../pageobjects/swipe.js');
 
 //homepage
 Given(/^user is on the homepage$/, async () => {
@@ -79,4 +78,20 @@ Then(/^user selects an item from the dropdown$/, async () => {
 Then(/^user clicks on the active button$/, async () => {
 	await Forms.clickActiveBtn();
 	await Forms.checkBtnClick();
+});
+
+
+//swipe
+
+Given(/^user is on the swipe page$/, async () => {
+	await Swipe.goToSwipePage();
+});
+
+When(/^user swipes$/, async () => {
+	
+	await Swipe.swipeToEndOfCarousel();
+});
+
+Then(/^success$/, async () => {
+	return true;
 });

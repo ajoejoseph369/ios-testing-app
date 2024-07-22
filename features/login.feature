@@ -1,5 +1,16 @@
 Feature: Test the demo app functionality
 
+  Scenario: User tries to fill in a form
+    Given user is on the forms page
+    When user enters <text> in the input field
+    Then user toggles the switch
+    Then user selects an item from the dropdown
+    Then user clicks on the active button
+
+    Examples:
+      | text      |
+      | Hello P10 |
+
   Scenario: Test the login functionality
     Given user is on the homepage
     When user clicks the login button

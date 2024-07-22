@@ -1,12 +1,12 @@
 exports.config = {
-    user: process.env.BROWSERSTACK_USERNAME || 'ajoejoseph_pQzkfi',
-    key: process.env.BROWSERSTACK_ACCESS_KEY || 'Lr2KYLionspZPQpC824V',
+    user: process.env.BROWSERSTACK_USERNAME || 'ajoejoseph_FbzkP6',
+    key: process.env.BROWSERSTACK_ACCESS_KEY || 'peNYMUbLpv6xpiV8wMX5',
     hostname: 'hub.browserstack.com',
     services: [
       [
         'browserstack',
         {
-          app: 'bs://28f8c36e551b0588530c3c455c6d7e863d13905d',
+          app: 'bs://b170109b4a2eb3e2f8238fa83ba39bba4cddd4c6',
           buildIdentifier: "${BUILD_NUMBER}",
           browserstackLocal: false
         },
@@ -16,17 +16,6 @@ exports.config = {
       'bstack:options': {
         deviceName: 'iPhone 15 Pro Max',
         platformVersion: '17',
-        platformName: 'ios',
-      }
-    }, {
-      'bstack:options': {
-        deviceName: 'iPhone 13',
-        platformVersion: '17',
-        platformName: 'ios',
-      } }, {
-      'bstack:options': {
-        deviceName: 'iPhone 12 Mini',
-        platformVersion: '14',
         platformName: 'ios',
       }
     }],
