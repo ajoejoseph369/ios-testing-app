@@ -34,3 +34,8 @@ Feature: Test the demo app functionality
     Examples:
       | email         | pass       | notif                            |
       | hello@p10.com | 1234567890 | You have successfully signed up! |
+
+  Scenario: User Swipes
+    Given user is on the swipe page
+    When user swipes
+    Then success
