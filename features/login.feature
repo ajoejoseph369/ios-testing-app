@@ -11,6 +11,11 @@ Feature: Test the demo app functionality
       | text      |
       | Hello P10 |
 
+  Scenario: User Swipes
+    Given user is on the swipe page
+    When user swipes
+    Then success
+
   Scenario: Test the login functionality
     Given user is on the homepage
     When user clicks the login button
@@ -34,8 +39,3 @@ Feature: Test the demo app functionality
     Examples:
       | email         | pass       | notif                            |
       | hello@p10.com | 1234567890 | You have successfully signed up! |
-
-  Scenario: User Swipes
-    Given user is on the swipe page
-    When user swipes
-    Then success
